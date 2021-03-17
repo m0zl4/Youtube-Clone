@@ -7,12 +7,20 @@
 
 import Foundation
 
+protocol ModelDelegate {
+  
+  func videosFetched(_ videos:[Video])
+  
+}
+
 class Model {
+  
+  var delegate:ModelDelegate?
   
   //buat fungsi mgambil data dr youtube API
   func getVideos() {
     //nyimpan url ke dlm variabel
-    let url = URL(string: Contsants.API_URL)
+    let url = URL(string: Constants.API_URL)
     
     //kita cek urlnya kosong gk?
     guard url != nil else {
@@ -37,7 +45,13 @@ class Model {
         
         let response = try decoder.decode(Response.self, from: data!)
         
-        dump(response)
+        if response.items != nil{
+          DispatchQueue.main.sync {
+            self.delegate?.videosFetched(response.items!)
+          }
+        }
+        
+        //dump(response)
         
       }
       catch {
