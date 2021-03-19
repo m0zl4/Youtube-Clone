@@ -10,6 +10,8 @@
 		D65B188926006CE700B61894 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65B188826006CE700B61894 /* Response.swift */; };
 		D65F361E2602FF5600A02D5A /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65F361D2602FF5600A02D5A /* VideoTableViewCell.swift */; };
 		D65F362626030DB000A02D5A /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65F362526030DB000A02D5A /* CacheManager.swift */; };
+		D69083AB26045A7900721F49 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69083AA26045A7900721F49 /* DetailViewController.swift */; };
+		D69083B026045BC300721F49 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69083AF26045BC300721F49 /* WebKit.framework */; };
 		D6909E8325FF0C7E00850317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6909E8225FF0C7E00850317 /* AppDelegate.swift */; };
 		D6909E8525FF0C7E00850317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6909E8425FF0C7E00850317 /* SceneDelegate.swift */; };
 		D6909E8725FF0C7E00850317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6909E8625FF0C7E00850317 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		D65B188826006CE700B61894 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		D65F361D2602FF5600A02D5A /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		D65F362526030DB000A02D5A /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		D69083AA26045A7900721F49 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D69083AF26045BC300721F49 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		D6909E7F25FF0C7E00850317 /* Youtube Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6909E8225FF0C7E00850317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6909E8425FF0C7E00850317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69083B026045BC300721F49 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +93,18 @@
 		D65F361B2602FB3800A02D5A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D69083AA26045A7900721F49 /* DetailViewController.swift */,
 				D6909E8625FF0C7E00850317 /* ViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D69083AE26045BC300721F49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D69083AF26045BC300721F49 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D6909E7625FF0C7E00850317 = {
@@ -98,6 +112,7 @@
 			children = (
 				D6909E8125FF0C7E00850317 /* Youtube Clone */,
 				D6909E8025FF0C7E00850317 /* Products */,
+				D69083AE26045BC300721F49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +217,7 @@
 				D6909EA225FF12D700850317 /* Model.swift in Sources */,
 				D6BF7E232601B32A00DBAD98 /* Constants.swift in Sources */,
 				D65F361E2602FF5600A02D5A /* VideoTableViewCell.swift in Sources */,
+				D69083AB26045A7900721F49 /* DetailViewController.swift in Sources */,
 				D6909E9F25FF11BE00850317 /* Video.swift in Sources */,
 				D65B188926006CE700B61894 /* Response.swift in Sources */,
 			);
